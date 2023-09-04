@@ -1,0 +1,145 @@
+/* ... existing styles ... */
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+  }
+  
+  /* Cart Styles */
+  .cart-items-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-item-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    
+  }
+  
+  .remove-button {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: rgb(180, 0, 0);
+  }
+  
+  .total-value-container {
+    text-align: center;
+    margin-top: 20px;
+    color: antiquewhite;
+  }
+
+  .checkout-button{
+    background-color: rgb(2, 0, 124);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+  }
+  
+  /* Modal Styles */
+  .purchase-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+  }
+  
+  .purchase-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .purchase-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .purchase-modal-close:hover {
+    color: rgb(200, 200, 200);
+  }
+  
+  .purchase-modal h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Horizontal Menu Styles */
+  .horizontal-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    z-index: 4;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding: 0px;
+    margin: 0 1px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.274);
+    cursor: pointer;
+  }
+  
